@@ -15,10 +15,10 @@ chmod -R a+w /github/workspace
 # Build the Jekyll site
 ####################################################
 
-jekyll build --trace
+jekyll build --trace JEKYLL_ENV=production
 
 ####################################################
 # Build completed
 ####################################################
 
-echo "Completed Jekll build"
+echo "Completed Jekyll build"
