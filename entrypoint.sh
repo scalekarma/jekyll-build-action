@@ -12,10 +12,7 @@ echo "Starting Jekyll build"
 chmod -R a+w /github/workspace
 chown -R $(whoami):$(whoami) /github/workspace
 
-git config --global --add safe.directory '*'
-git config --global --add safe.directory /github/workspace
-git config --add safe.directory '*'
-git config --add safe.directory /github/workspace
+git config --global safe.directory /github/workspace
 
 git config --global --list
 
