@@ -11,6 +11,9 @@ echo "Starting Jekyll build"
 
 chmod -R a+w /github/workspace
 
+sh -c "git config --global --add safe.directory $PWD"
+sh -c "git config --global --add safe.directory /github/workspace"
+
 ####################################################
 # Build the Jekyll site
 ####################################################
